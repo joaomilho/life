@@ -79,10 +79,14 @@ My design decisions
 ===
 
 - Separate logic from presentation. I've only implemented a ConsolePresenter for the game, that uses a StringPresenter for the grid, but you can easily implement image, sound, 3d, or whatever-comes-to-your-mind presenter.
-- Do not use a fixed grid. What I do is to iterate over the living cells, and then over the dead cells around 'em to check if they should be born. This decision made me decide not to create a Cell object to handle indivual cell logic (like cell.live?) because it would make it more complex instead of simple (kind of counterintuitive but trust me on this).
-- There's a simples list of patterns on a module called Patterns. Extending this would be great.
+
+- Do not use a fixed grid. What I do is to iterate over the living cells, and then over the dead cells around 'em to check if they should be born. This decision made me avoid the creation of a Cell object to handle indivual cell logic (like cell.live?) because it would make it more complex instead of simple (kind of counterintuitive but trust me on this).
+
+- There's a simple list of patterns on a module called Patterns. Extending this would be great.
+
 - I implemented the tick with a "next" method, so you can do crazy iterative stuff with the grid.
-- Instead of loops to figure out the living neighbours, I monkeypatched array to get all cells around a cell, and then used list operations to get live/dead groups. Since our "whole world" is about Game of Live, I think this monkeypatch is natural and elegant.
+
+- Instead of loops to figure out the living neighbours, I monkeypatched array to get all cells around a cell (using a product), and then used list operations to get live/dead groups. Since our "whole world" is about Game of Live, I think this monkeypatch is natural and elegant (as a rule of thumb, I'm against monkey patches and "magic").
 
 A gif for you
 ===
