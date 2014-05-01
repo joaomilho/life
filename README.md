@@ -13,7 +13,7 @@ Sample code
 class Life::Grid
   autoload :StringPresenter, 'life/grid/string_presenter'  
 
-  attr_reader :rows, :cols, :living_cells
+  attr_reader :living_cells
 
   def initialize *living_cells
     @living_cells = living_cells.to_set
