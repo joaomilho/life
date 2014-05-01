@@ -83,3 +83,8 @@ My design decisions
 - There's a simples list of patterns on a module called Patterns. Extending this would be great.
 - I implemented the tick with a "next" method, so you can do crazy iterative stuff with the grid.
 - Instead of loops to figure out the living neighbours, I monkeypatched array to get all cells around a cell, and then used list operations to get live/dead groups. Since our "whole world" is about Game of Live, I think this monkeypatch is natural and elegant.
+
+A gif for you
+===
+
+![Gosper gun](https://raw.githubusercontent.com/joaomilho/life/master/img/gosper.gif)
