@@ -1,6 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/joaomilho/life.png)](https://codeclimate.com/github/joaomilho/life)
 
-
+[![Build Status](https://travis-ci.org/joaomilho/life.svg?branch=master)](https://travis-ci.org/joaomilho/life)
 
 Conway's Game of Life
 ===
