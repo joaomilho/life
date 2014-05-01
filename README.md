@@ -1,3 +1,7 @@
+[![Code Climate](https://codeclimate.com/github/joaomilho/life.png)](https://codeclimate.com/github/joaomilho/life)
+
+
+
 Conway's Game of Life
 ===
 
